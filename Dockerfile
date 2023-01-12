@@ -2,41 +2,40 @@ FROM alpine:3.17
 
 RUN apk add                     \
     bash                        \
-    mc                          #
-
-    # apache2                     \
-    # apache2-ssl                 \
-    # apache2-proxy               \
-    # apache2-proxy-html          \
-    # mysql-client                \
-    # graphicsmagick              \
-    # php8                        \
-    # php8-apache2                \
-    # php8-pdo_mysql              \
-    # php8-mysqli                 \
-    # php8-mysqlnd                \
-    # php8-pdo_sqlite             \
-    # php8-session                \
-    # php8-gd                     \
-    # php8-xml                    \
-    # php8-simplexml              \
-    # php8-xmlreader              \
-    # php8-xmlwriter              \
-    # php8-zip                    \
-    # php8-intl                   \
-    # php8-fileinfo               \
-    # php8-iconv                  \
-    # php8-tokenizer              \
-    # php8-phar                   \
-    # php8-curl                   \
-    # php8-posix                  \
-    # php8-pcntl                  \
-    # php8-mbstring               \
-    # php8-gmp                    \
-    # php8-bcmath                 \
-    # php8-opcache                \
-    # php8-pecl-apcu              \
-    # php8-exif                   #
+    mc                          \
+    apache2                     \
+    apache2-ssl                 \
+    apache2-proxy               \
+    apache2-proxy-html          \
+    mysql-client                \
+    graphicsmagick              \
+    php81                       \
+    php81-apache2               \
+    php81-pdo_mysql             \
+    php81-mysqli                \
+    php81-mysqlnd               \
+    php81-pdo_sqlite            \
+    php81-session               \
+    php81-gd                    \
+    php81-xml                   \
+    php81-simplexml             \
+    php81-xmlreader             \
+    php81-xmlwriter             \
+    php81-zip                   \
+    php81-intl                  \
+    php81-fileinfo              \
+    php81-iconv                 \
+    php81-tokenizer             \
+    php81-phar                  \
+    php81-curl                  \
+    php81-posix                 \
+    php81-pcntl                 \
+    php81-mbstring              \
+    php81-gmp                   \
+    php81-bcmath                \
+    php81-opcache               \
+    php81-pecl-apcu             \
+    php81-exif                  #
 
 # fix a dompdf problem...
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.13/community/ gnu-libiconv=1.15-r3
