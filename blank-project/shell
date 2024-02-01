@@ -3,7 +3,7 @@
 CONTAINER=$(basename $(pwd))
 
 if [ $# -eq 0 ]; then
-    docker exec -it ${CONTAINER}_application_1 bash -c 'su you'
+    docker exec -it ${CONTAINER}-application-1 bash -c 'su you'
 else
-    docker exec -it ${CONTAINER}_application_1 "$@"
+    docker exec -it ${CONTAINER}-application-1 "$@"
 fi
