@@ -8,7 +8,8 @@ services:
             - "443:443"
         volumes:
             - ./html/:/srv/index/
-            - ./etc/custom/php.ini:/etc/php7/conf.d/custom-php.ini
+            - ./home/:/home/you/
+            - ./etc/custom/php.ini:/etc/php81/conf.d/custom-php.ini
             - ./etc/custom/apache.conf:/etc/apache2/conf.d/custom-apache.conf
             - ./etc/apache2/conf.d/vhosts.d:/etc/apache2/conf.d/vhosts.d
     database:
@@ -16,7 +17,6 @@ services:
         env_file: .env
         ports:
             - "3306:3306"
-        restart: unless-stopped
         volumes:
             - ./mysql:/var/lib/mysql
             - ./etc/custom/mariadb.conf:/etc/my.cnf.d/custom-mariadb.conf
