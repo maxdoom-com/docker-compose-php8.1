@@ -3,6 +3,7 @@ FROM alpine:3.17
 RUN apk add                     \
     bash                        \
     mc                          \
+    git                         \
     apache2                     \
     apache2-ssl                 \
     apache2-proxy               \
