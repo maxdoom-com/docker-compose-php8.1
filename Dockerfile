@@ -38,6 +38,7 @@ RUN apk add                     \
     php81-pecl-apcu             \
     php81-exif                  \
     php81-soap                  \
+    php81-ldap                  \
     python3                     \
     py3-virtualenv              #
 
