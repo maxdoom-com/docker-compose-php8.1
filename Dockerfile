@@ -39,6 +39,7 @@ RUN apk add                     \
     php81-exif                  \
     php81-soap                  \
     php81-ldap                  \
+    php81-pecl-imagick          \
     python3                     \
     py3-virtualenv              #
 
