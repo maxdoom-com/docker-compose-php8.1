@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo 'This is only a placeholder. Replace it with a composer version you like. You may get the newest version this way:'
+echo '    wget https://getcomposer.org/download/2.8.2/composer.phar'

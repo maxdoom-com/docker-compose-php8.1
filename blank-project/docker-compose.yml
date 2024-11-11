@@ -12,6 +12,7 @@ services:
             - ./etc/custom/php.ini:/etc/php81/conf.d/custom-php.ini
             - ./etc/custom/apache.conf:/etc/apache2/conf.d/custom-apache.conf
             - ./etc/apache2/conf.d/vhosts.d:/etc/apache2/conf.d/vhosts.d
+            - ./composer.phar:/usr/bin/composer
     database:
         build: https://github.com/maxdoom-com/docker-compose-mysql10.5.git
         env_file: .env
